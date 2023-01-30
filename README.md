@@ -5,3 +5,11 @@ TD1 : Use basic Linux commands
 
 **Q1**
 
+cd /
+
+**Q2**
+
+pwd
+
+**Q3**
+
