@@ -3,5 +3,12 @@
 ## EXERCISE 1 
 1. List all files 
 ```
-cd / 
+ls -a
 ```
+
+
+2. Change directory 
+```
+cd 
+```
+
