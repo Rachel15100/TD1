@@ -12,3 +12,12 @@ ls -a
 cd 
 ```
 
+3. Check location
+```
+pwd
+```
+
+4.
+```
+ 
+```
