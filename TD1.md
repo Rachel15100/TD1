@@ -98,7 +98,7 @@ pwd
 
 7. Move the text file into the new folder 
 ```
- mv rachel_gomesse.txt /notes
+ mv rachel_gomesse.txt notes
 ```
 
 8. Rename the text file by rachel_gomesse_2023.txt
@@ -109,27 +109,42 @@ pwd
 9. Make a copy of the folder notes, name it notes_2022
 ```
  cd /home/rgomesse/linux_ex_1
- cp ./notes/rachel_gomesse_2023.txt ./notes_2022
+ cp -r notes notes_2022
 ```
 
 10. Delete the notes folder using the verbose option
 ```
- rm -rfv /home/rgomesse/linux_ex_1/notes
+ rm -rv /home/rgomesse/linux_ex_1/notes
 ```
 
 ## EXERCISE 3
 
 1. Create a script script_1.sh in the folder linux_ex_1
 ```
- vi script_1.sh
- #!/bin/script_1.sh
+ vim script_1.sh
 ```
 
-2. Create a script script_1.sh in the folder linux_ex_1
+2. Write the commands in the script
 ```
- #!/bin/script_1.sh
+ #!/bin/bash
+ echo "script running please wait ..."
+ echo "done"
 ```
 
+3. Save and quit the script
+```
+:wq
+```
+
+4. Display the script
+```
+ls
+```
+
+5. Run the script
+```
+cat script_1.sh
+```
 
 ## EXERCISE 4.1
 
@@ -191,11 +206,11 @@ pwd
 
 4. Modify the file in root user mode, write some new information in the file
 ```
- sudo  vim /home/rgomesse/linux_ex_1/.private_file.txt
- ls -la
+ sudo  vim .private_file.txt
+ ls -la .private_file.txt
 ```
 
 5. Change permissions to read, write and execute for all users
 ```
-
+ sudo chmod u=rwx,g=rwx,o=rwx .private_file.txt
 ```
