@@ -206,11 +206,75 @@ cat script_1.sh
 
 4. Modify the file in root user mode, write some new information in the file
 ```
- sudo  vim .private_file.txt
+ sudo vim /home/rgomesse/linux_ex_1/.private_file.txt
  ls -la .private_file.txt
 ```
 
-5. Change permissions to read, write and execute for all users
+5. Change permissions to read, write and execute for all users, modify the file content in normal user mode, display the file content
 ```
  sudo chmod u=rwx,g=rwx,o=rwx .private_file.txt
+ vim /home/rgomesse/linux_ex_1/.private_file.txt
+ #To leave the file and save the modification : :wq!
+```
+
+## EXERCISE 4.3
+
+1. Change permissions of .private_file to read and write for all users, in normal user mode
+```
+chmod u=rw,g=rw,o=rw .private_file.txt
+#changing permissions of '.private_file.txt': Operation not permitted
+```
+
+2.Set the new file owner as the current user
+```
+sudo chown rgomesse .private_file.txt
+chgrp rgomesse .private_file.txt
+```
+
+3. Change permissions of .private_file to read and write for all users, in normal user mode
+```
+chmod u=rw,g=rw,o=rw .private_file.txt
+```
+
+## EXERCISE 4.4
+
+1. Update your main package manager named apt
+```
+sudo apt-get update
+```
+
+2. Update your main package manager named apt
+```
+sudo apt-get upgrade
+Y
+```
+
+3. Install the package cmatrix
+```
+sudo apt-get install cmatrix
+```
+
+4. Launch cmatrix
+```
+cmatrix
+```
+
+5. Quit cmatrix
+```
+#ctrl+c
+```
+
+6. Install the package tmux
+```
+sudo apt-get install tmux
+```
+
+7. Launch tmux
+```
+tmux
+```
+
+8. Say "Hello session 0" using bash in your current tmux session
+```
+
 ```
