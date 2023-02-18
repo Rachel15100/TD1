@@ -221,60 +221,60 @@ cat script_1.sh
 
 1. Change permissions of .private_file to read and write for all users, in normal user mode
 ```
-chmod u=rw,g=rw,o=rw .private_file.txt
-#changing permissions of '.private_file.txt': Operation not permitted
+ chmod u=rw,g=rw,o=rw .private_file.txt
+ #changing permissions of '.private_file.txt': Operation not permitted
 ```
 
 2.Set the new file owner as the current user
 ```
-sudo chown rgomesse .private_file.txt
-chgrp rgomesse .private_file.txt
+ sudo chown rgomesse .private_file.txt
+ chgrp rgomesse .private_file.txt
 ```
 
 3. Change permissions of .private_file to read and write for all users, in normal user mode
 ```
-chmod u=rw,g=rw,o=rw .private_file.txt
+ chmod u=rw,g=rw,o=rw .private_file.txt
 ```
 
 ## EXERCISE 4.4
 
 1. Update your main package manager named apt
 ```
-sudo apt-get update
+ sudo apt-get update
 ```
 
 2. Update your main package manager named apt
 ```
-sudo apt-get upgrade
-Y
+ sudo apt-get upgrade
+ Y
 ```
 
 3. Install the package cmatrix
 ```
-sudo apt-get install cmatrix
+ sudo apt-get install cmatrix
 ```
 
 4. Launch cmatrix
 ```
-cmatrix
+ cmatrix
 ```
 
 5. Quit cmatrix
 ```
-#ctrl+c
+ #ctrl+c
 ```
 
 6. Install the package tmux
 ```
-sudo apt-get install tmux
+ sudo apt-get install tmux
 ```
 
 7. Launch tmux
 ```
-tmux
+ tmux
 ```
 
 8. Say "Hello session 0" using bash in your current tmux session
 ```
-
+ 
 ```
