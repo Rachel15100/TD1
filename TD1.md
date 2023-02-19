@@ -276,5 +276,79 @@ cat script_1.sh
 
 8. Say "Hello session 0" using bash in your current tmux session
 ```
- 
+ vim test.sh
+ #!/bin/bash
+ echo "Hello session 0"
+```
+
+9. Launch cmatrix in your current tmux session
+```
+ cmatrix
+```
+
+10. Detach from the current tmux session (without stopping cmatrix)
+```
+ #ctrl + B 
+ #Then D
+```
+
+11. Create a new tmux session
+```
+ tmux
+```
+
+12. Say "Hello session 1" using bash in your new tmux session
+```
+ vim test_session_1.sh
+ #!/bin/bash
+ echo "Hello session 1"
+```
+
+13. Detach from the current tmux session
+```
+ #ctrl + B 
+ #Then D
+```
+
+14. List all tmux session
+```
+ tmux ls
+```
+
+15. Attach again to session 0
+```
+ tmux attach -t 0
+```
+
+16. Detach again
+```
+ #ctrl + B
+ #Then D
+```
+
+17. Attach again to session 1
+```
+ tmux attach -t 1
+```
+
+18. Detach again
+```
+ #ctrl + B
+ #Then D
+```
+
+19. List all rummuning sessions 
+```
+ tmux ls
+```
+
+20. Kill all tmux sessions and quit tmux
+```
+ tmux kill-session -t 0
+ tmux kill-session -t 1
+```
+
+21. List all sessions 
+```
+ tmux ls
 ```
