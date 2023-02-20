@@ -352,3 +352,45 @@ cat script_1.sh
 ```
  tmux ls
 ```
+
+## EXERCISE 4.5
+
+1. Display the cmatrix help function 
+```
+ cmatrix --help
+```
+
+2. Launch cmatrix and make it display white characters (in place of the green)
+```
+ cmatrix -C blue
+```
+
+3. Re-launch cmatrix and slow down the speed of characters actualization
+```
+ cmatrix -s down
+```
+
+4. Stop cmatrix
+```
+ #ctrl + c
+```
+
+5. Launch cmatrix with both : A slow speed of characters actualization AND Blue characters
+```
+ cmatrix -s down -C blue
+```
+
+6. Display cmatrix manual (different from the help notice)
+```
+ man cmatrix
+```
+
+7. Display the tmux help function
+```
+ tmux --help
+```
+
+8. Display the tmux manual
+```
+ man tmux
+```
